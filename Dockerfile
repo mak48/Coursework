@@ -1,5 +1,9 @@
 FROM eclipse-temurin:21-jdk-jammy
-WORKDIR /target  # Рабочая директория, которую проверяет Sliplane
-COPY target/*.jar /target/app.jar  # Копируем JAR в /target
+
+WORKDIR /app
+
+COPY target/*.jar /app/my-app.jar
+
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "/target/app.jar"]
+
+ENTRYPOINT ["java", "-jar", "my-app.jar"]
