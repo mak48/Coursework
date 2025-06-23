@@ -8,7 +8,7 @@ on:
 
 env:
   REGISTRY: docker.io
-  IMAGE_NAME: rolik00/coursework
+  IMAGE_NAME: mak41/coursework
 
 jobs:
   build-and-push:
